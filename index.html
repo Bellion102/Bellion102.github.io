@@ -13,7 +13,7 @@
             style="--clr:#04fc43;" ><i></i></div>
             <div class="circle circle2" id="mn" 
             style="--clr:#fee800;"><i></i></div>
-            <div class="circle circle3" d="hr"
+            <div class="circle circle3" id="hr"
             style="--clr:#ff2972;"><i></i></div>
 
 
@@ -48,9 +48,9 @@
             let mm = day.getMinutes() * 6;
             let ss = day.getSeconds() * 6;
 
-            hr.style.transform = 'rotateZ(${hh+(mm/12}deg)';
-            mn.style.transform = 'rotateZ(${mm}deg)';
-            sc.style.transform = 'rotateZ(${ss}deg)';
+            hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+            mn.style.transform = `rotateZ(${mm}deg)`;
+            sc.style.transform = `rotateZ(${ss}deg)`;
         } )
     </script>
 </body>
